@@ -1,0 +1,420 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D3B9D7B04B148CC7ACDE778 /* Pods_JKO_shop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48CFD79E5E883A7BA9E4DC8B /* Pods_JKO_shop.framework */; };
+		BF3A42342B92FC780029C7F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42332B92FC780029C7F6 /* AppDelegate.swift */; };
+		BF3A42362B92FC780029C7F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42352B92FC780029C7F6 /* SceneDelegate.swift */; };
+		BF3A42382B92FC780029C7F6 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42372B92FC780029C7F6 /* MainViewController.swift */; };
+		BF3A423D2B92FC780029C7F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF3A423C2B92FC780029C7F6 /* Assets.xcassets */; };
+		BF3A42482B9313DD0029C7F6 /* MainPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42472B9313DD0029C7F6 /* MainPresenter.swift */; };
+		BF3A424A2B93186A0029C7F6 /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42492B93186A0029C7F6 /* ProductEntity.swift */; };
+		BF3A424C2B931D4A0029C7F6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */; };
+		BF3A424E2B931E1C0029C7F6 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3BD7C3211DE21C85D44F1A13 /* Pods-JKO shop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKO shop.release.xcconfig"; path = "Target Support Files/Pods-JKO shop/Pods-JKO shop.release.xcconfig"; sourceTree = "<group>"; };
+		48CFD79E5E883A7BA9E4DC8B /* Pods_JKO_shop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JKO_shop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3A42302B92FC780029C7F6 /* JKO shop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JKO shop.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF3A42332B92FC780029C7F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF3A42352B92FC780029C7F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BF3A42372B92FC780029C7F6 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		BF3A423C2B92FC780029C7F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF3A42412B92FC780029C7F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF3A42472B9313DD0029C7F6 /* MainPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPresenter.swift; sourceTree = "<group>"; };
+		BF3A42492B93186A0029C7F6 /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
+		BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		E8B081E8CCF0FDF9F130479F /* Pods-JKO shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKO shop.debug.xcconfig"; path = "Target Support Files/Pods-JKO shop/Pods-JKO shop.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF3A422D2B92FC780029C7F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6D3B9D7B04B148CC7ACDE778 /* Pods_JKO_shop.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		454953CA05E128050FF73521 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48CFD79E5E883A7BA9E4DC8B /* Pods_JKO_shop.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		81D3CFECD4056AABF41AF44B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E8B081E8CCF0FDF9F130479F /* Pods-JKO shop.debug.xcconfig */,
+				3BD7C3211DE21C85D44F1A13 /* Pods-JKO shop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		BF3A42272B92FC780029C7F6 = {
+			isa = PBXGroup;
+			children = (
+				BF3A42322B92FC780029C7F6 /* JKO shop */,
+				BF3A42312B92FC780029C7F6 /* Products */,
+				81D3CFECD4056AABF41AF44B /* Pods */,
+				454953CA05E128050FF73521 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BF3A42312B92FC780029C7F6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF3A42302B92FC780029C7F6 /* JKO shop.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF3A42322B92FC780029C7F6 /* JKO shop */ = {
+			isa = PBXGroup;
+			children = (
+				BF3A42332B92FC780029C7F6 /* AppDelegate.swift */,
+				BF3A42352B92FC780029C7F6 /* SceneDelegate.swift */,
+				BF3A42372B92FC780029C7F6 /* MainViewController.swift */,
+				BF3A42472B9313DD0029C7F6 /* MainPresenter.swift */,
+				BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */,
+				BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */,
+				BF3A423C2B92FC780029C7F6 /* Assets.xcassets */,
+				BF3A42492B93186A0029C7F6 /* ProductEntity.swift */,
+				BF3A42412B92FC780029C7F6 /* Info.plist */,
+			);
+			path = "JKO shop";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF3A422F2B92FC780029C7F6 /* JKO shop */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF3A42442B92FC780029C7F6 /* Build configuration list for PBXNativeTarget "JKO shop" */;
+			buildPhases = (
+				E2ED34974F9358867DBF4D4E /* [CP] Check Pods Manifest.lock */,
+				BF3A422C2B92FC780029C7F6 /* Sources */,
+				BF3A422D2B92FC780029C7F6 /* Frameworks */,
+				BF3A422E2B92FC780029C7F6 /* Resources */,
+				B5EF90B0D0F0FDFDCAC2E88B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JKO shop";
+			productName = "JKO shop";
+			productReference = BF3A42302B92FC780029C7F6 /* JKO shop.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF3A42282B92FC780029C7F6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					BF3A422F2B92FC780029C7F6 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = BF3A422B2B92FC780029C7F6 /* Build configuration list for PBXProject "JKO shop" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF3A42272B92FC780029C7F6;
+			productRefGroup = BF3A42312B92FC780029C7F6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF3A422F2B92FC780029C7F6 /* JKO shop */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF3A422E2B92FC780029C7F6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3A423D2B92FC780029C7F6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B5EF90B0D0F0FDFDCAC2E88B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKO shop/Pods-JKO shop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JKO shop/Pods-JKO shop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JKO shop/Pods-JKO shop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2ED34974F9358867DBF4D4E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JKO shop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF3A422C2B92FC780029C7F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF3A42382B92FC780029C7F6 /* MainViewController.swift in Sources */,
+				BF3A42342B92FC780029C7F6 /* AppDelegate.swift in Sources */,
+				BF3A424A2B93186A0029C7F6 /* ProductEntity.swift in Sources */,
+				BF3A424E2B931E1C0029C7F6 /* ProductViewController.swift in Sources */,
+				BF3A42362B92FC780029C7F6 /* SceneDelegate.swift in Sources */,
+				BF3A424C2B931D4A0029C7F6 /* ProductCollectionViewCell.swift in Sources */,
+				BF3A42482B9313DD0029C7F6 /* MainPresenter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		BF3A42422B92FC780029C7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF3A42432B92FC780029C7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF3A42452B92FC780029C7F6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E8B081E8CCF0FDF9F130479F /* Pods-JKO shop.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8L4LV9LH2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JKO shop/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "infinity5050.JKO-shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF3A42462B92FC780029C7F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BD7C3211DE21C85D44F1A13 /* Pods-JKO shop.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8L4LV9LH2B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "JKO shop/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "infinity5050.JKO-shop";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF3A422B2B92FC780029C7F6 /* Build configuration list for PBXProject "JKO shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3A42422B92FC780029C7F6 /* Debug */,
+				BF3A42432B92FC780029C7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF3A42442B92FC780029C7F6 /* Build configuration list for PBXNativeTarget "JKO shop" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF3A42452B92FC780029C7F6 /* Debug */,
+				BF3A42462B92FC780029C7F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF3A42282B92FC780029C7F6 /* Project object */;
+}
