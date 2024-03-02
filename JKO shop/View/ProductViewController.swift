@@ -8,14 +8,15 @@
 import Foundation
 import UIKit
 
-class ProductViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
-    
+class ProductViewController: UIViewController {
+    var presenter: ProductViewPresenter!
     var products: [Product] = []
     
     private var collectionView: UICollectionView?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = ProductViewPresenter(viewProtocol: self)
         
         let layout = UICollectionViewFlowLayout()
         layout.itemSize = CGSize(width: view.frame.size.width/2 - 10, height: view.frame.size.width/2 + 50)
@@ -33,6 +34,22 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
         view.addSubview(collectionView)
         collectionView.frame = view.bounds
     }
+
+    
+
+}
+
+extension ProductViewController: ProductViewProtocol {
+    func reloadData() {
+
+    }
+}
+
+extension ProductViewController: UICollectionViewDelegate {
+    
+}
+
+extension ProductViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return products.count
@@ -46,4 +63,8 @@ class ProductViewController: UIViewController, UICollectionViewDelegate, UIColle
         cell.configure(with: product)
         return cell
     }
+}
+
+protocol ProductViewProtocol: AnyObject {
+    func reloadData()
 }

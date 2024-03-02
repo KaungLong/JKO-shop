@@ -1,19 +1,18 @@
 //
-//  MainPresenter.swift
+//  ProductViewPresenter.swift
 //  JKO shop
 //
 //  Created by 10322 on 2024/3/2.
 //
 
 import Foundation
-import UIKit
 
-class MainPresenter {
-    private(set) weak var viewProtocol: MainViewProtocol?
-    var products: [Product] = [] 
+class ProductViewPresenter {
+    private(set) weak var viewProtocol: ProductViewProtocol?
+    var products: [Product] = []
     var filteredProducts: [Product] = []
 
-    init(viewProtocol: MainViewProtocol?) {
+    init(viewProtocol: ProductViewProtocol?) {
         self.viewProtocol = viewProtocol
     }
     

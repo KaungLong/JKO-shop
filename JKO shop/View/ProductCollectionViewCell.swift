@@ -10,8 +10,7 @@ import UIKit
 
 class ProductCollectionViewCell: UICollectionViewCell {
     static let identifier = "ProductCollectionViewCell"
-    
-    // UI组件，如图片和标签
+
     private let productImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill
@@ -32,8 +31,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         label.textColor = .gray
         return label
     }()
-    
-    // 初始化方法
+
     override init(frame: CGRect) {
         super.init(frame: frame)
         contentView.addSubview(productImageView)
@@ -45,8 +43,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
-    // 配置Cell
+ 
     func configure(with product: Product) {
 
         nameLabel.text = product.title

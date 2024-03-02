@@ -6,18 +6,20 @@
 //
 
 import UIKit
+import SnapKit
 
 class MainController: UIViewController {
     var presenter: MainPresenter!
     let searchController = UISearchController(searchResultsController: nil)
-
+    var productViewController: ProductViewController!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        presenter = MainPresenter(viewProtocol: self)
         setupNavigation()
         setupSearchController()
-
-        presenter = MainPresenter(viewProtocol: self)
-   
+        setupProductViewController()
+        setupUI()
     }
     
     private func setupNavigation() {
@@ -31,6 +33,23 @@ class MainController: UIViewController {
         navigationItem.searchController = searchController
         definesPresentationContext = true
     }
+    
+    private func setupProductViewController() {
+        productViewController = ProductViewController()
+        addChild(productViewController)
+        view.addSubview(productViewController.view)
+        productViewController.didMove(toParent: self)
+    }
+    
+    private func setupUI() {
+        view.backgroundColor = .brown
+        
+        productViewController.view.snp.makeConstraints { make in
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top)
+            make.left.right.bottom.equalToSuperview()
+        }
+    }
+
 }
 
 extension MainController: UISearchResultsUpdating {

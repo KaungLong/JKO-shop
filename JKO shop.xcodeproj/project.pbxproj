@@ -16,6 +16,7 @@
 		BF3A424A2B93186A0029C7F6 /* ProductEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42492B93186A0029C7F6 /* ProductEntity.swift */; };
 		BF3A424C2B931D4A0029C7F6 /* ProductCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */; };
 		BF3A424E2B931E1C0029C7F6 /* ProductViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */; };
+		BF3A42532B9322B40029C7F6 /* ProductViewPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42522B9322B40029C7F6 /* ProductViewPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		BF3A42492B93186A0029C7F6 /* ProductEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEntity.swift; sourceTree = "<group>"; };
 		BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewController.swift; sourceTree = "<group>"; };
+		BF3A42522B9322B40029C7F6 /* ProductViewPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductViewPresenter.swift; sourceTree = "<group>"; };
 		E8B081E8CCF0FDF9F130479F /* Pods-JKO shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKO shop.debug.xcconfig"; path = "Target Support Files/Pods-JKO shop/Pods-JKO shop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,15 +88,40 @@
 			children = (
 				BF3A42332B92FC780029C7F6 /* AppDelegate.swift */,
 				BF3A42352B92FC780029C7F6 /* SceneDelegate.swift */,
-				BF3A42372B92FC780029C7F6 /* MainViewController.swift */,
-				BF3A42472B9313DD0029C7F6 /* MainPresenter.swift */,
-				BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */,
-				BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */,
 				BF3A423C2B92FC780029C7F6 /* Assets.xcassets */,
-				BF3A42492B93186A0029C7F6 /* ProductEntity.swift */,
+				BF3A424F2B931EF30029C7F6 /* View */,
+				BF3A42502B931F180029C7F6 /* Pressenter */,
+				BF3A42512B931F320029C7F6 /* Model */,
 				BF3A42412B92FC780029C7F6 /* Info.plist */,
 			);
 			path = "JKO shop";
+			sourceTree = "<group>";
+		};
+		BF3A424F2B931EF30029C7F6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BF3A42372B92FC780029C7F6 /* MainViewController.swift */,
+				BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */,
+				BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BF3A42502B931F180029C7F6 /* Pressenter */ = {
+			isa = PBXGroup;
+			children = (
+				BF3A42472B9313DD0029C7F6 /* MainPresenter.swift */,
+				BF3A42522B9322B40029C7F6 /* ProductViewPresenter.swift */,
+			);
+			path = Pressenter;
+			sourceTree = "<group>";
+		};
+		BF3A42512B931F320029C7F6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF3A42492B93186A0029C7F6 /* ProductEntity.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +242,7 @@
 				BF3A424A2B93186A0029C7F6 /* ProductEntity.swift in Sources */,
 				BF3A424E2B931E1C0029C7F6 /* ProductViewController.swift in Sources */,
 				BF3A42362B92FC780029C7F6 /* SceneDelegate.swift in Sources */,
+				BF3A42532B9322B40029C7F6 /* ProductViewPresenter.swift in Sources */,
 				BF3A424C2B931D4A0029C7F6 /* ProductCollectionViewCell.swift in Sources */,
 				BF3A42482B9313DD0029C7F6 /* MainPresenter.swift in Sources */,
 			);
