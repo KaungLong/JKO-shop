@@ -8,5 +8,5 @@ target 'JKO shop' do
   # Pods for JKO shop
 
 pod 'SnapKit', '~> 5.0.0'
-
+  pod 'lottie-ios', '3.5.0'
 end

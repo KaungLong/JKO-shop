@@ -45,16 +45,30 @@ class ProductCollectionViewCell: UICollectionViewCell {
     }
  
     func configure(with product: Product) {
-
         nameLabel.text = product.title
         priceLabel.text = "$\(product.price)"
 
-        if let imageUrl = URL(string: product.images.first ?? "") {
-//            productImageView.load(url: imageUrl)
+        if let imageUrlString = product.images.first, let imageUrl = URL(string: imageUrlString) {
+            NetworkService.shared.loadImage(url: imageUrl, into: productImageView)
         }
     }
     
     private func applyConstraints() {
-
+        productImageView.snp.makeConstraints { make in
+            make.top.equalToSuperview().offset(10)
+            make.left.right.equalToSuperview().inset(10)
+            make.height.equalTo(productImageView.snp.width) // 使图片的高度等于其宽度
+        }
+        
+        nameLabel.snp.makeConstraints { make in
+            make.top.equalTo(productImageView.snp.bottom).offset(10)
+            make.left.right.equalToSuperview().inset(10)
+        }
+        
+        priceLabel.snp.makeConstraints { make in
+            make.top.equalTo(nameLabel.snp.bottom).offset(5)
+            make.left.right.equalToSuperview().inset(10)
+            make.bottom.lessThanOrEqualToSuperview().inset(10)
+        }
     }
 }

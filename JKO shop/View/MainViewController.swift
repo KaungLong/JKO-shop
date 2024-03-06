@@ -8,8 +8,7 @@
 import UIKit
 import SnapKit
 
-class MainController: UIViewController {
-    var presenter: MainPresenter!
+class MainController: BaseViewController<MainPresenter> {
     let searchController = UISearchController(searchResultsController: nil)
     var productViewController: ProductViewController!
     
@@ -64,7 +63,5 @@ extension MainController: MainViewProtocol {
     }
 }
 
-protocol MainViewProtocol: AnyObject {
-    func reloadData()
-}
+
 

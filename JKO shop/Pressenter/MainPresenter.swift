@@ -16,3 +16,7 @@ class MainPresenter {
     }
 
 }
+
+protocol MainViewProtocol: BaseProtocol {
+    func reloadData()
+}

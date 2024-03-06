@@ -6,18 +6,35 @@
 //
 
 import Foundation
+import UIKit
 
 class ProductViewPresenter {
-    private(set) weak var viewProtocol: ProductViewProtocol?
+    private(set) weak var viewDelegate: ProductViewDelegate?
     var products: [Product] = []
     var filteredProducts: [Product] = []
 
-    init(viewProtocol: ProductViewProtocol?) {
-        self.viewProtocol = viewProtocol
+    init(viewDelegate: ProductViewDelegate?) {
+        self.viewDelegate = viewDelegate
     }
     
-    private func loadProducts() -> [Product] {
-        // 加載數據的邏輯
-        return []
+    func loadProducts() {
+        NetworkService.shared.request(endpoint: .getAllProduct, decodingTo: [Product].self) { [weak self] result in
+            switch result {
+            case .success(let products):
+                print("成功獲取列表: \(products.count)个产品")
+                DispatchQueue.main.async {
+                    self?.products = products
+                    self?.filteredProducts = products // Assuming you want to initially show all products
+                    self?.viewDelegate?.reloadData()
+                }
+            case .failure(let error):
+                print("請求失敗: \(error)")
+                self?.viewDelegate?.defaultError("無法加載產品，請稍後再試。", currentAlert: UIAlertController())
+            }
+        }
     }
+}
+
+protocol ProductViewDelegate: BaseProtocol {
+    func reloadData()
 }
