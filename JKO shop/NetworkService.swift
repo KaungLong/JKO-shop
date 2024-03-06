@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Kingfisher
 
 class NetworkService {
     static let shared = NetworkService()
@@ -44,17 +45,21 @@ class NetworkService {
         }.resume()
     }
     
-    func loadImage(url: URL, into imageView: UIImageView) {
+    func loadImage(url: URL, completion: @escaping (UIImage?) -> Void) {
         URLSession.shared.dataTask(with: url) { data, response, error in
-            guard let data = data, error == nil else { return }
+            guard let data = data, error == nil, let image = UIImage(data: data) else {
+                DispatchQueue.main.async {
+                    completion(nil)
+                }
+                return
+            }
             
             DispatchQueue.main.async {
-                if let image = UIImage(data: data) {
-                    imageView.image = image
-                }
+                completion(image)
             }
         }.resume()
     }
+
 }
 
 

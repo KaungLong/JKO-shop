@@ -21,6 +21,7 @@
 		BF3A42582B932BE30029C7F6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42572B932BE30029C7F6 /* NetworkService.swift */; };
 		BF3A425A2B932E2D0029C7F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42592B932E2D0029C7F6 /* BaseViewController.swift */; };
 		BF3A425C2B9454E10029C7F6 /* AlertCtrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A425B2B9454E10029C7F6 /* AlertCtrller.swift */; };
+		BF3A42612B9863360029C7F6 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42602B9863360029C7F6 /* ProductDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		BF3A42572B932BE30029C7F6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		BF3A42592B932E2D0029C7F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BF3A425B2B9454E10029C7F6 /* AlertCtrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCtrller.swift; sourceTree = "<group>"; };
+		BF3A42602B9863360029C7F6 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
 		E8B081E8CCF0FDF9F130479F /* Pods-JKO shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKO shop.debug.xcconfig"; path = "Target Support Files/Pods-JKO shop/Pods-JKO shop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				BF3A425E2B9463DA0029C7F6 /* Base */,
 				BF3A42372B92FC780029C7F6 /* MainViewController.swift */,
 				BF3A424D2B931E1C0029C7F6 /* ProductViewController.swift */,
+				BF3A42602B9863360029C7F6 /* ProductDetailViewController.swift */,
 				BF3A424B2B931D4A0029C7F6 /* ProductCollectionViewCell.swift */,
 			);
 			path = View;
@@ -269,6 +272,7 @@
 				BF3A42382B92FC780029C7F6 /* MainViewController.swift in Sources */,
 				BF3A425A2B932E2D0029C7F6 /* BaseViewController.swift in Sources */,
 				BF3A42342B92FC780029C7F6 /* AppDelegate.swift in Sources */,
+				BF3A42612B9863360029C7F6 /* ProductDetailViewController.swift in Sources */,
 				BF3A424A2B93186A0029C7F6 /* ProductEntity.swift in Sources */,
 				BF3A425C2B9454E10029C7F6 /* AlertCtrller.swift in Sources */,
 				BF3A424E2B931E1C0029C7F6 /* ProductViewController.swift in Sources */,

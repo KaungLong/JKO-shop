@@ -59,7 +59,19 @@ extension ProductViewController: ProductViewDelegate {
 }
 
 extension ProductViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let product = products[indexPath.row]
+        let detailVC = ProductDetailViewController()
+        // 假设ProductDetailViewController有一个product属性或者初始化方法来设置产品信息
+        detailVC.product = product
+        // 这里选择推送或模态展示，根据你的导航结构而定
+        // 如果你使用的是UINavigationController，可以这样推送：
+        navigationController?.pushViewController(detailVC, animated: true)
+        
+        // 如果没有使用UINavigationController或者你想要模态展示，可以这样：
+        // present(detailVC, animated: true, completion: nil)
+    }
+}
 }
 
 extension ProductViewController: UICollectionViewDataSource {
