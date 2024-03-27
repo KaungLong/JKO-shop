@@ -9,14 +9,23 @@ import Foundation
 import UIKit
 
 class MainPresenter {
-    private(set) weak var viewProtocol: MainViewProtocol?
-
-    init(viewProtocol: MainViewProtocol?) {
+    private(set) weak var viewProtocol: MainViewDelegate?
+    
+    var shouldStopTaskWhenLeave = true
+    var taskList: [Task<Void, Never>?] = []
+    
+    func suspendAllTasks() {
+        for task in taskList {
+            task?.cancel()
+        }
+    }
+    
+    init(viewProtocol: MainViewDelegate?) {
         self.viewProtocol = viewProtocol
     }
 
 }
 
-protocol MainViewProtocol: BaseProtocol {
+protocol MainViewDelegate: BaseProtocol {
     func reloadData()
 }

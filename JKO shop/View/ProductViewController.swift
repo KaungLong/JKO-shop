@@ -72,7 +72,6 @@ extension ProductViewController: UICollectionViewDelegate {
         // present(detailVC, animated: true, completion: nil)
     }
 }
-}
 
 extension ProductViewController: UICollectionViewDataSource {
     

@@ -57,7 +57,7 @@ extension MainController: UISearchResultsUpdating {
     }
 }
 
-extension MainController: MainViewProtocol {
+extension MainController: MainViewDelegate {
     func reloadData() {
 
     }

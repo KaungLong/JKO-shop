@@ -8,8 +8,8 @@
 import Foundation
 import UIKit
 
-class BaseViewController<T>: UIViewController, BaseProtocol {
-    var presenter: T!
+class BaseViewController<BaseViewPresenter>: UIViewController, BaseProtocol {
+    var presenter: BaseViewPresenter!
     var refreshControl: UIRefreshControl?
     
     var shouldStopTaskWhenLeave = true

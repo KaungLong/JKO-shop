@@ -60,6 +60,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         priceLabel.text = "$\(product.price)"
 
         activityIndicator.startAnimating()
+        print("product.images:\(product.images)")
         guard let imageUrlString = product.images.first?.replacingOccurrences(of: "\"", with: "").replacingOccurrences(of: "[", with: "").replacingOccurrences(of: "]", with: ""),
               let imageUrl = URL(string: imageUrlString) else {
             print("無效圖片url:\(product.title)")
