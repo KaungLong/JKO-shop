@@ -55,10 +55,10 @@ extension ProductDetailViewController: UICollectionViewDataSource {
         print("product?.images.first:\(String(describing: product?.images.first))")
 
         if let imagesJsonString = product?.images.first {
-            // 移除字符串两端可能存在的JSON格式符号
+            // 移除字串兩端可能存在的JSON格式符號
             let trimmedString = imagesJsonString.trimmingCharacters(in: CharacterSet(charactersIn: "[\\]\""))
             
-            // 尝试通过\",\"来分割字符串，获取URLs数组
+            // 嘗試通過\",\"來分割字串，獲取URLs數組
             let imageUrlStrings = trimmedString.components(separatedBy: "\",\"").map { $0.replacingOccurrences(of: "\\", with: "") }
             
             print("imageUrlStrings:\(imageUrlStrings)")
@@ -68,12 +68,12 @@ extension ProductDetailViewController: UICollectionViewDataSource {
                 print("imageUrlStrings.count:\(imageUrlStrings.count)")
                 cell.configure(with: imageUrl)
             } else {
-                print("索引超出图片URLs数组范围")
-                // 可以选择在这里设置一个默认图片
+                print("索引超出圖片URLs數組範圍")
+                // 可以選擇在這裡設置一個預設圖片
             }
         } else {
-            print("无法获取或解析images JSON字符串")
-            // 可以选择在这里设置一个默认图片
+            print("無法獲取或解析images JSON字串")
+            // 可以選擇在這裡設置一個預設圖片
         }
 
         return cell

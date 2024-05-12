@@ -84,7 +84,7 @@ class ProductCollectionViewCell: UICollectionViewCell {
         productImageView.snp.makeConstraints { make in
             make.top.equalToSuperview().offset(10)
             make.left.right.equalToSuperview().inset(10)
-            make.height.equalTo(productImageView.snp.width) // 使图片的高度等于其宽度
+            make.height.equalTo(productImageView.snp.width)
         }
 
         nameLabel.snp.makeConstraints { make in

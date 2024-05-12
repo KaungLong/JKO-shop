@@ -6,7 +6,6 @@
 //
 
 import Foundation
-import Foundation
 
 // 定義產品類別模型
 struct Category: Codable {
@@ -75,7 +74,7 @@ struct Product: Codable {
         
         guard let creationDate = ISO8601DateFormatter.withFractionalSeconds.date(from: creationAtString),
               let updateDate = ISO8601DateFormatter.withFractionalSeconds.date(from: updatedAtString) else {
-            throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: container.codingPath, debugDescription: "日期字符串格式不正确"))
+            throw DecodingError.dataCorrupted(DecodingError.Context(codingPath: container.codingPath, debugDescription: "日期字符串格式不正確"))
 
         }
 

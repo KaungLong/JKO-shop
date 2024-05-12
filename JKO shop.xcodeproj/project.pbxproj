@@ -22,6 +22,7 @@
 		BF3A425A2B932E2D0029C7F6 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42592B932E2D0029C7F6 /* BaseViewController.swift */; };
 		BF3A425C2B9454E10029C7F6 /* AlertCtrller.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A425B2B9454E10029C7F6 /* AlertCtrller.swift */; };
 		BF3A42612B9863360029C7F6 /* ProductDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF3A42602B9863360029C7F6 /* ProductDetailViewController.swift */; };
+		BF4C35262BF0B57D0059B8C2 /* JKOshop.png in Resources */ = {isa = PBXBuildFile; fileRef = BF4C35252BF0B57D0059B8C2 /* JKOshop.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		BF3A42592B932E2D0029C7F6 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		BF3A425B2B9454E10029C7F6 /* AlertCtrller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCtrller.swift; sourceTree = "<group>"; };
 		BF3A42602B9863360029C7F6 /* ProductDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailViewController.swift; sourceTree = "<group>"; };
+		BF4C35252BF0B57D0059B8C2 /* JKOshop.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JKOshop.png; sourceTree = "<group>"; };
 		E8B081E8CCF0FDF9F130479F /* Pods-JKO shop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JKO shop.debug.xcconfig"; path = "Target Support Files/Pods-JKO shop/Pods-JKO shop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -96,6 +98,7 @@
 		BF3A42322B92FC780029C7F6 /* JKO shop */ = {
 			isa = PBXGroup;
 			children = (
+				BF4C35252BF0B57D0059B8C2 /* JKOshop.png */,
 				BF3A42332B92FC780029C7F6 /* AppDelegate.swift */,
 				BF3A42352B92FC780029C7F6 /* SceneDelegate.swift */,
 				BF3A423C2B92FC780029C7F6 /* Assets.xcassets */,
@@ -215,6 +218,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF4C35262BF0B57D0059B8C2 /* JKOshop.png in Resources */,
 				BF3A423D2B92FC780029C7F6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

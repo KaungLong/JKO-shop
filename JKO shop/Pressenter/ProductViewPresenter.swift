@@ -21,10 +21,10 @@ class ProductViewPresenter {
         NetworkService.shared.request(endpoint: .getAllProduct, decodingTo: [Product].self) { [weak self] result in
             switch result {
             case .success(let products):
-                print("成功獲取列表: \(products.count)个产品")
+                print("成功獲取列表: \(products.count)個產品")
                 DispatchQueue.main.async {
                     self?.products = products
-                    self?.filteredProducts = products // Assuming you want to initially show all products
+                    self?.filteredProducts = products // 假設您想要初始顯示所有產品
                     self?.viewDelegate?.reloadData()
                 }
             case .failure(let error):
