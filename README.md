@@ -12,4 +12,4 @@ This is a simple shopping mall page display, used for practicing the MVP archite
 
 ## Demo
 ---
-
+<img src="https://github.com/WeiMoKaungLong/my_ios_BudgetApp/blob/main/Demo/my_ios_BudgetApp_demo.gif](https://github.com/KaungLong/JKO-shop/blob/main/JKO%20shop/JKOshop.png">
